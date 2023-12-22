@@ -107,10 +107,10 @@ function Login() {
                         Don't have an account?
                         <span className="ml-2">Register</span>
                     </Link>
-                    <div className="text-center mt-2 ">
+                    <div className="text-center mt-2">
                         <Button
                             size="small"
-                            className="text-[1.1rem] mr-auto border border-gray-500 py-1 text-base font-semibold "
+                            className="text-[1.1rem] mr-auto border border-gray-500 py-1 text-base font-semibold m-auto"
                         >
                             <span>Login</span>
                             {isLoading && <Loader size={5} width={2} />}
@@ -118,7 +118,7 @@ function Login() {
                     </div>
                 </form>
                 {loginError && (
-                    <div className="text-center py-2 mt-3.5 bg-red-100 text-red-500 rounded">
+                    <div className="text-center py-2 mt-3.5 bg-red-100 text-red-500 rounded ">
                         {loginError}
                     </div>
                 )}

@@ -167,7 +167,7 @@ function Register() {
                     <div className="text-center mt-2 ">
                         <Button
                             size="small"
-                            className="text-[1.1rem] mr-auto border border-gray-500 py-1 text-base font-semibold"
+                            className="text-[1.1rem] mr-auto border border-gray-500 py-1 text-base font-semibold m-auto"
                         >
                             <div className="flex items-center gap-2">
                                 <span>Register</span>

@@ -5,7 +5,8 @@ import './index.css';
 import axios from 'axios';
 import AuthProvider from './contexts/AuthContext.tsx';
 
-axios.defaults.baseURL = 'http://localhost:5000/api/v1';
+axios.defaults.baseURL =
+    'https://stormy-headland-49496-8b3c09f94668.herokuapp.com//api/v1';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.withCredentials = true;
 
