@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --custom-purple-100: #7269ef;
+    --custom-purple-hover-100: #7a71f3;
+}
+
+*{
+    box-sizing: border-box;
+}
+
