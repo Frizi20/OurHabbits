@@ -21,15 +21,16 @@ function Login() {
     const [errors, setErrors] = useState<FormData>({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
     const { error: loginError, isLoading, login: loginUser } = useLogin();
-    
-    useEffect(()=>{
-        (async function(){
-            const res = await axios.get('/')
-            console.log(res);
-            
-        })();
 
-    },[])
+    useEffect(() => {
+        (async function () {
+            const res = await axios.get('/', {
+                baseURL:
+                    'https://stormy-headland-49496-8b3c09f94668.herokuapp.com/',
+            });
+            console.log(res);
+        })();
+    }, []);
 
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = e.target;
