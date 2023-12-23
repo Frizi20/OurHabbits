@@ -1,11 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../ui/Button';
 import FormRow from '../../ui/FormRow';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaEyeSlash } from 'react-icons/fa';
 import { FaEye } from 'react-icons/fa';
 import useLogin from './useLogin';
 import Loader from '../../ui/Loader';
+import axios from 'axios';
 
 type FormData = {
     email: string;
@@ -20,6 +21,15 @@ function Login() {
     const [errors, setErrors] = useState<FormData>({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
     const { error: loginError, isLoading, login: loginUser } = useLogin();
+    
+    useEffect(()=>{
+        (async function(){
+            const res = await axios.get('/')
+            console.log(res);
+            
+        })();
+
+    },[])
 
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = e.target;
