@@ -27,6 +27,7 @@ function Login() {
             const res = await axios.get('/', {
                 baseURL:
                     'https://stormy-headland-49496-8b3c09f94668.herokuapp.com/',
+                withCredentials:true
             });
             console.log(res);
         })();
